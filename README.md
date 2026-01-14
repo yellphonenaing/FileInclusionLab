@@ -32,8 +32,8 @@ docker --version
 ## 📥 Step 1: Clone the Lab from GitHub
 
 ```bash
-git clone https://github.com/yellphonenaing/DirectoryTraversalAndSSRFLabs
-cd DirectoryTraversalAndSSRFLabs
+git clone https://github.com/yellphonenaing/FileInclusionLab
+cd FileInclusionLab
 ```
 
 ---
@@ -43,14 +43,14 @@ cd DirectoryTraversalAndSSRFLabs
 From inside the project directory:
 
 ```bash
-docker build -t directory-traversal-ssrf-labs .
+docker build -t file-inclusion-lab .
 ```
 
 If build is successful, you will see:
 
 ```
 Successfully built <image_id>
-Successfully tagged directory-traversal-ssrf-labs:latest
+Successfully tagged file-inclusion-lab:latest
 ```
 
 ---
@@ -59,9 +59,9 @@ Successfully tagged directory-traversal-ssrf-labs:latest
 
 ```bash
 docker run -d \
-  -p 8082:80 \
-  --name directory-traversal-ssrf-labs \
-  directory-traversal-ssrf-labs
+  -p 8085:80 \
+  --name file-inclusion-lab \
+  file-inclusion-lab
 ```
 
 ---
